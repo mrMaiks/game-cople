@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+body {
+    min-width: 320px;
+    font-family: sans-serif;
+
+    background-image: url(../img/background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* кастомные свойства */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin:0 30px;
+    padding-top: 75px;
+    align-items: center;
+}
+
+.header {
+    
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+
+    border-radius: 0 0 5px 5px;
+    border: 1px solid black;
+
+    background-color: #3f3f3fb2;
+}
+
+.timer {
+    font-size: 30px;
+    font-weight: bold;
+    
+    color: white;
+}
+
+.game-form {
+    display: flex;
+    max-width: max-content;
+}
+
+.form__game-input {
+    width: 250px;
+    height: 35px;
+    padding: 0 10px;
+    margin-right: 20px;
+    
+    border: 0;
+    background-color: #92919e;
+    border-radius: 5px;
+
+    color: white;
+    transition:background-color 0.3s ease-in-out;
+}
+
+.form__game-btn {
+    cursor: pointer;
+    width: 150px;
+
+    border: 0;
+    background-color: #92919e;
+    border-radius: 5px;
+
+    color: white;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* дополнительные стили при hover or focus */
+.form__game-input:focus {
+    outline: none;
+}
+.form__game-input:hover {
+    background-color: #92919e9a;
+}
+.form__game-btn:hover {
+    background-color: #92919e9a;
+    transform: scale(1.1);
+}
+
+/* Список и карточки */
+.list-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+.card-item {
+    cursor: pointer;
+    display: flex;
+    width: 50px;
+    height: 65px;
+    padding: 140px 80px 140px 100px;
+
+    border: 3px solid #3f3f3f;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #000;
+
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+    color: #c90037;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+/* Карточки при наводке */
+.card-item:hover {
+    border: 3px solid #c90037;
+    transform: scale(1.1);
+}

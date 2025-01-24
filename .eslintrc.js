@@ -5,7 +5,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    'prefer-const': 0,
     'no-alert': 0,
     'no-param-reassign': [2, { props: false }],
     'no-plusplus': 0,
